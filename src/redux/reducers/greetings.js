@@ -1,4 +1,4 @@
-import { FETCH_ALL_GREETINGS } from '../actions/actionTypes';
+import FETCH_ALL_GREETINGS from '../actions/actionTypes';
 
 const greetings = (state = [], action) => {
   switch (action.type) {

@@ -1,10 +1,10 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getGreetings } from '../redux/actions/greetings';
+import getGreetings from '../redux/actions/greetings';
 
 const Greeting = () => {
   const greetings = useSelector((state) => state.greetings);
-  const greeting = greetings[Math.floor(Math.random()*greetings.length)] || { greeting: "" };
+  const greeting = greetings[Math.floor(Math.random() * greetings.length)] || { greeting: '' };
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -12,8 +12,6 @@ const Greeting = () => {
       dispatch(getGreetings());
     }
   });
-
-  console.log(greeting);
 
   return (
     <>
@@ -26,6 +24,6 @@ const Greeting = () => {
       }
     </>
   );
-}
+};
 
-export default Greeting
+export default Greeting;

@@ -14,4 +14,6 @@ const getData = async (url) => {
   }
 };
 
-export const fetchGreetings = () => getData(url);
+const fetchGreetings = () => getData(url);
+
+export default fetchGreetings;
