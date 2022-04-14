@@ -1,13 +1,14 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Greeting from "./components/Greeting";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          Learn React
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <Routes>
+            <Route exact path="/" element={<Greeting />} />
+        </Routes>
+    );
 }
 
 export default App;

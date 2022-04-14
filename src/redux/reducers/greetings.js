@@ -3,7 +3,7 @@ import { FETCH_ALL_GREETINGS } from '../actions/actionTypes';
 const greetings = (state = [], action) => {
   switch (action.type) {
     case FETCH_ALL_GREETINGS:
-      return [...state, action.payload.data];
+      return action.payload;
     default:
       return state;
   }

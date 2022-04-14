@@ -1,8 +1,13 @@
-const url = 'https://hello-rails-backendapi.herokuapp.com/api/v1/greetings';
+const url = 'api/v1/greetings';
 
 const getData = async (url) => {
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
     return response.json();
   } catch (error) {
     throw new Error(error.message);
