@@ -2,9 +2,7 @@
 An app that displays random greetings.
 
 ## Backend API
-[Repo](https://github.com/KDlamini/hello-rails-back-end)
-
-[Live API](https://hello-rails-backendapi.herokuapp.com/api-docs/index.html)
+[PR](https://github.com/KDlamini/hello-rails-back-end/pull/2)
 
 ## Built With
 
